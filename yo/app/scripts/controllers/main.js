@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name dndCharacterBuilderApp.controller:MainCtrl
+ * @name springTemplateApp.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of the dndCharacterBuilderApp
+ * Controller of the springTemplateApp
  */
-angular.module('dndCharacterBuilderApp')
+angular.module('springTemplateApp')
   .controller('MainCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',

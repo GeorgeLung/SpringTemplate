@@ -2,14 +2,14 @@
 
 /**
  * @ngdoc overview
- * @name dndCharacterBuilderApp
+ * @name springTemplateApp
  * @description
- * # dndCharacterBuilderApp
+ * # springTemplateApp
  *
  * Main module of the application.
  */
 angular
-  .module('dndCharacterBuilderApp', [
+  .module('springTemplateApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
