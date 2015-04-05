@@ -13,6 +13,7 @@
 	</properties>
 
 	<build>
+		<finalName>SpringTemplate</finalName>
 		<sourceDirectory>src</sourceDirectory>
 		<plugins>
 			<plugin>
@@ -32,34 +33,6 @@
 				</configuration>
 			</plugin>
 			<plugin>
-				<groupId>com.github.trecloux</groupId>
-				<artifactId>yeoman-maven-plugin</artifactId>
-				<version>0.4</version>
-				<executions>
-					<execution>
-						<goals>
-							<goal>build</goal>
-						</goals>
-						<configuration>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
-			<plugin>
-				<artifactId>maven-clean-plugin</artifactId>
-				<version>2.5</version>
-				<configuration>
-					<filesets>
-						<fileset>
-						<directory>yo/dist</directory>
-						</fileset>
-						<fileset>
-							<directory>yo/.tmp</directory>
-						</fileset>
-					</filesets>
-				</configuration>
-			</plugin>
-			<plugin>
 				<artifactId>maven-antrun-plugin</artifactId>
 				<version>1.8</version>
 				<executions>
@@ -71,7 +44,7 @@
 						<configuration>
 							<target name="Copy yeoman app to war">
 								<copy todir="${project.build.directory}/${project.build.finalName}">
-									<fileset dir="${basedir}/yo/dist">
+									<fileset dir="${basedir}/app">
 										<include name="**/*" />
 									</fileset>
 								</copy>
